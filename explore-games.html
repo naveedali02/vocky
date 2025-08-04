@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Games</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main_banner">
+    <div class="main_header">
+      <nav class="navbar navbar_cs bg-body-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/media/images/logo.svg" class="img-fluid" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="index.html">
+                <img src="./assets/media/images/logo.svg" alt="Logo" />
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body align-items-center header_btns">
+              <div class="d-flex ms-auto flex-wrap gap-3">
+                <a href="./admin/signup.html" class="btn btn-primary btn_primary_cs me-3">Sign up</a>
+                <a href="./admin/login.html" class="btn btn-primary btn_primary_cs">Log In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="banner_img">
+      <img src="./assets/media/images/checkout_banner.png" class="img-fluid w-100" />
+    </div>
+  </div>
+
+  <div class="checkout_page_bg">
+    <div class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between gap-3">
+              <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">Explore Games</h2>
+              <div class="">
+                <button class="btn btn-primary btn_primary_cs">Boosting</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Cards with AOS Animations -->
+          <div class="col-6 col-md-3" data-aos="zoom-in">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_1.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_2.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_3.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_1.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_2.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="500">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_3.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="600">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_1.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="700">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_2.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="800">
+            <a href="#" class="all_ganmes_link">
+              <div class="all_game_card">
+                <img src="./assets/media/images/game_3.png" class="img-fluid" />
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_section">
+    <!-- ... existing footer code (no change needed) ... -->
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+
+</html>

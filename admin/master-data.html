@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="admin_wrapper">
+        <div class="toggle_menu">
+            <i class="fa-angle-left fa"></i>
+        </div>
+        <div class="sidebar">
+
+            <div class="text-center">
+                <img src="../assets/media/images/logo.svg" class="img-fluid" />
+            </div>
+            <div class="sidebar_menu_wrapper">
+                <div class="sidebar_menu_wrapper_inner">
+                    <ul class="list-unstyled sidebar_listing mb-0">
+                        <li>
+                            <a href="./dashboard.html" class="btn btn_menu_item "><span class="menu_icon"><img
+                                        src="../assets/media/icons/home.svg"></span><span
+                                    class="menu_text">Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="./order-history.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                        src="../assets/media/icons/order_history.svg"></span><span
+                                    class="menu_text">Order
+                                    History</span></a>
+                        </li>
+                        <li>
+                            <a href="./games.html" class="btn btn_menu_item "><span class="menu_icon"><img
+                                        src="../assets/media/icons/games.svg"></span><span
+                                    class="menu_text">Games</span></a>
+                        </li>
+                        <li>
+                            <a href="./agents.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                        src="../assets/media/icons/user.svg"></span><span
+                                    class="menu_text">Agents</span></a>
+                        </li>
+                        <li>
+                            <a href="./transation-history.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                        src="../assets/media/icons/trans_hist.svg"></span><span
+                                    class="menu_text">Transaction History</span></a>
+                        </li>
+                        <li>
+                            <a href="./master-data.html" class="btn btn_menu_item active"><span class="menu_icon"><img
+                                        src="../assets/media/icons/master_data.svg"></span><span
+                                    class="menu_text">Master Data</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ul class="list-unstyled bottom_buttom_sidebar mb-0">
+                    <li>
+                        <a href="#" class="btn btn_menu_item"><span class="menu_icon"><img
+                                    src="../assets/media/icons/setting2.svg"></span><span
+                                class="menu_text">Settings</span></a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                    src="../assets/media/icons/logoutcurve.svg"></span><span
+                                class="menu_text">Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main_content">
+            <div class="admin_banner mb-4">
+                <div>
+                    <h1 class="text-white fw-700 fs-30 mb-1">Welcome back, Dzul!</h1>
+                    <p class="text-white mb-0">You current dashboard for today</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-4 pt-4 stepper_cs" id="stepper_cs">
+                <div class="step_cs text-center active_cs">
+                    <div class="step-circle_cs"><i class="fa fa-gamepad"></i></div>
+                    <div class="step-label_cs">Select<br>Games</div>
+                </div>
+                <div class="step-line_cs"></div>
+                <div class="step_cs text-center">
+                    <div class="step-circle_cs"><i class="fa fa-file-alt"></i></div>
+                    <div class="step-label_cs">Upload<br>Roles</div>
+                </div>
+                <div class="step-line_cs"></div>
+                <div class="step_cs text-center">
+                    <div class="step-circle_cs"><i class="fa fa-users"></i></div>
+                    <div class="step-label_cs">Add<br>Players</div>
+                </div>
+            </div>
+            <div class="step-content_cs">
+                <div class="step-section_cs" id="step0_cs">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Game name</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="active-to">Select Game</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="upload-card upload-container">
+                                <div class="upload-header">Character Image</div>
+                                <div class="p-3">
+                                    <div class="upload-body">
+                                        <input type="file" class="file-input" accept=".jpg,.jpeg,.png,.pdf" />
+                                        <div class="upload-icon">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.8904" cy="17.7009" r="17.3982" fill="#2F0E17" />
+                                                <path
+                                                    d="M24.114 25.1385H19.6347V20.6123H21.115C21.4904 20.6123 21.7122 20.1857 21.4904 19.8785L18.6108 15.8941C18.4274 15.6381 18.0477 15.6381 17.8643 15.8941L14.9847 19.8785C14.7629 20.1857 14.9805 20.6123 15.3601 20.6123H16.8404V25.1385H11.8236C9.58397 25.0148 7.80078 22.9202 7.80078 20.6507C7.80078 19.085 8.64972 17.7199 9.90819 16.9819C9.79301 16.6705 9.73328 16.3377 9.73328 15.9879C9.73328 14.3882 11.0259 13.0956 12.6256 13.0956C12.9712 13.0956 13.3039 13.1553 13.6153 13.2705C14.5411 11.3081 16.5376 9.94727 18.8583 9.94727C21.8615 9.95153 24.3358 12.2509 24.6174 15.1817C26.9253 15.5784 28.6786 17.7157 28.6786 20.1345C28.6786 22.7197 26.6651 24.9593 24.114 25.1385Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="upload-instruction">Select a file or drag and drop here
+                                        </div>
+                                        <div class="upload-note">JPG, PNG or PDF, file size no more than 2MB
+                                        </div>
+                                        <button class="btn btn-outline-dark upload-btn">Upload Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second uploader -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="upload-card upload-container">
+                                <div class="upload-header">Banner Image</div>
+                                <div class="p-3">
+                                    <div class="upload-body">
+                                        <input type="file" class="file-input" accept="image/*,application/pdf" />
+                                        <div class="upload-icon">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.8904" cy="17.7009" r="17.3982" fill="#2F0E17" />
+                                                <path
+                                                    d="M24.114 25.1385H19.6347V20.6123H21.115C21.4904 20.6123 21.7122 20.1857 21.4904 19.8785L18.6108 15.8941C18.4274 15.6381 18.0477 15.6381 17.8643 15.8941L14.9847 19.8785C14.7629 20.1857 14.9805 20.6123 15.3601 20.6123H16.8404V25.1385H11.8236C9.58397 25.0148 7.80078 22.9202 7.80078 20.6507C7.80078 19.085 8.64972 17.7199 9.90819 16.9819C9.79301 16.6705 9.73328 16.3377 9.73328 15.9879C9.73328 14.3882 11.0259 13.0956 12.6256 13.0956C12.9712 13.0956 13.3039 13.1553 13.6153 13.2705C14.5411 11.3081 16.5376 9.94727 18.8583 9.94727C21.8615 9.95153 24.3358 12.2509 24.6174 15.1817C26.9253 15.5784 28.6786 17.7157 28.6786 20.1345C28.6786 22.7197 26.6651 24.9593 24.114 25.1385Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="upload-instruction">Select a file or drag and drop here
+                                        </div>
+                                        <div class="upload-note">JPG, PNG or PDF, file size no more than 2MB
+                                        </div>
+                                        <button class="btn btn-outline-dark upload-btn">Upload Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="step-section_cs d-none" id="step1_cs">
+                    <h4>Step 2: Upload Roles</h4>
+                    <p>Upload a file containing character roles for the selected game.</p>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="step-section_cs d-none" id="step2_cs">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Enter">
+                                <label for="name">Player name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Enter">
+                                <label for="name">Win Rate</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Enter">
+                                <label for="name">Current Rank</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="upload-card upload-container">
+                                <div class="upload-header">Character Image</div>
+                                <div class="p-3">
+                                    <div class="upload-body">
+                                        <input type="file" class="file-input" accept=".jpg,.jpeg,.png,.pdf" />
+                                        <div class="upload-icon">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.8904" cy="17.7009" r="17.3982" fill="#2F0E17" />
+                                                <path
+                                                    d="M24.114 25.1385H19.6347V20.6123H21.115C21.4904 20.6123 21.7122 20.1857 21.4904 19.8785L18.6108 15.8941C18.4274 15.6381 18.0477 15.6381 17.8643 15.8941L14.9847 19.8785C14.7629 20.1857 14.9805 20.6123 15.3601 20.6123H16.8404V25.1385H11.8236C9.58397 25.0148 7.80078 22.9202 7.80078 20.6507C7.80078 19.085 8.64972 17.7199 9.90819 16.9819C9.79301 16.6705 9.73328 16.3377 9.73328 15.9879C9.73328 14.3882 11.0259 13.0956 12.6256 13.0956C12.9712 13.0956 13.3039 13.1553 13.6153 13.2705C14.5411 11.3081 16.5376 9.94727 18.8583 9.94727C21.8615 9.95153 24.3358 12.2509 24.6174 15.1817C26.9253 15.5784 28.6786 17.7157 28.6786 20.1345C28.6786 22.7197 26.6651 24.9593 24.114 25.1385Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="upload-instruction">Select a file or drag and drop here
+                                        </div>
+                                        <div class="upload-note">JPG, PNG or PDF, file size no more than 2MB
+                                        </div>
+                                        <button class="btn btn-outline-dark upload-btn">Upload Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second uploader -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="upload-card upload-container">
+                                <div class="upload-header">Banner Image</div>
+                                <div class="p-3">
+                                    <div class="upload-body">
+                                        <input type="file" class="file-input" accept="image/*,application/pdf" />
+                                        <div class="upload-icon">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.8904" cy="17.7009" r="17.3982" fill="#2F0E17" />
+                                                <path
+                                                    d="M24.114 25.1385H19.6347V20.6123H21.115C21.4904 20.6123 21.7122 20.1857 21.4904 19.8785L18.6108 15.8941C18.4274 15.6381 18.0477 15.6381 17.8643 15.8941L14.9847 19.8785C14.7629 20.1857 14.9805 20.6123 15.3601 20.6123H16.8404V25.1385H11.8236C9.58397 25.0148 7.80078 22.9202 7.80078 20.6507C7.80078 19.085 8.64972 17.7199 9.90819 16.9819C9.79301 16.6705 9.73328 16.3377 9.73328 15.9879C9.73328 14.3882 11.0259 13.0956 12.6256 13.0956C12.9712 13.0956 13.3039 13.1553 13.6153 13.2705C14.5411 11.3081 16.5376 9.94727 18.8583 9.94727C21.8615 9.95153 24.3358 12.2509 24.6174 15.1817C26.9253 15.5784 28.6786 17.7157 28.6786 20.1345C28.6786 22.7197 26.6651 24.9593 24.114 25.1385Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="upload-instruction">Select a file or drag and drop here
+                                        </div>
+                                        <div class="upload-note">JPG, PNG or PDF, file size no more than 2MB
+                                        </div>
+                                        <button class="btn btn-outline-dark upload-btn">Upload Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end gap-3 mt-4">
+
+                <button id="prevBtn_cs" class="btn btn-outline-secondary px-4 py-2"><i
+                        class="fa fa-angle-left me-2"></i>Previous</button>
+                <button id="nextBtn_cs" class="btn btn-primary btn_green_cs px-4 py-2">Next <i
+                        class="fa fa-angle-right ms-2"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- js part  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ordersTable').DataTable({
+                responsive: true,
+                searching: false,  // Hide search bar
+                lengthChange: false, // Hide "Show Entries" dropdown
+                pageLength: 7
+            });
+        });
+    </script>
+    <script>
+        const steps = document.querySelectorAll('.step_cs');
+        const nextBtn = document.getElementById('nextBtn_cs');
+        const prevBtn = document.getElementById('prevBtn_cs');
+        const sections = document.querySelectorAll('.step-section_cs');
+
+        let currentStep = 0;
+
+        function updateUI() {
+            // Update step circles
+            steps.forEach((step, index) => {
+                step.classList.toggle('active_cs', index === currentStep);
+            });
+
+            // Update visible section
+            sections.forEach((section, index) => {
+                section.classList.toggle('d-none', index !== currentStep);
+            });
+
+            // Update prev button disabled
+            prevBtn.disabled = currentStep === 0;
+
+            // Update next button label and icon
+            if (currentStep === steps.length - 1) {
+                nextBtn.innerHTML = `Finish <i class="fa fa-check ms-2"></i>`;
+            } else {
+                nextBtn.innerHTML = `Next <i class="fa fa-angle-right ms-2"></i>`;
+            }
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                updateUI();
+            } else {
+                alert('All steps completed!');
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 0) {
+                currentStep--;
+                updateUI();
+            }
+        });
+
+        updateUI(); // Initial UI setup
+    </script>
+
+</body>
+
+</html>

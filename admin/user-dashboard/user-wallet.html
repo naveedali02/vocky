@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents | Wallet</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="admin_wrapper">
+<div class="toggle_menu">
+            <i class="fa-angle-left fa"></i>
+        </div>
+        <div class="sidebar">
+            
+            <div class="text-center">
+                <img src="../../assets/media/images/logo.svg" class="img-fluid" />
+            </div>
+            <div class="sidebar_menu_wrapper">
+                <div class="sidebar_menu_wrapper_inner">
+                    <ul class="list-unstyled sidebar_listing mb-0">
+                        <li>
+                            <a href="./user-dashboard.html" class="btn btn_menu_item "><span class="menu_icon"><img
+                                        src="../../assets/media/icons/home.svg"></span><span
+                                    class="menu_text">Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="./order-history.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                        src="../../assets/media/icons/order_history.svg"></span><span class="menu_text">Order
+                                    History</span></a>
+                        </li>
+                        <li>
+                            <a href="./user-wallet.html" class="btn btn_menu_item active"><span class="menu_icon"><img
+                                        src="../../assets/media/icons/wallet.svg"></span><span class="menu_text">Wallet</span></a>
+                        </li>
+    
+                    </ul>
+                </div>
+                
+                <ul class="list-unstyled bottom_buttom_sidebar mb-0">
+                    <li>
+                        <a href="#" class="btn btn_menu_item"><span class="menu_icon"><img
+                                    src="../../assets/media/icons/setting2.svg"></span><span
+                                class="menu_text">Settings</span></a>
+                    </li>
+                   <li>
+                        <a href="../login.html" class="btn btn_menu_item"><span class="menu_icon"><img
+                                    src="../../assets/media/icons/logoutcurve.svg"></span><span
+                                class="menu_text">Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main_content">
+            <div class="admin_banner mb-4">
+                <div>
+                    <h1 class="text-white fw-700 fs-30 mb-1">Welcome back, Dzul!</h1>
+                    <p class="text-white mb-0">You current dashboard for today</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                        <h6 class="text_dark_33 fw-700 mb-2 fs-24">Wallet</h6>
+                        
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header fw-700 fs-20 py-3">
+                            Choose Top up Amount
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <div class="form-floating mb-4">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter custom Amount">
+                                        <label for="name">Enter custom Amount</label>
+                                        <small class="text-muted">Maximum amount limit is RM 10,000.00</small>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="d-flex gap-2 radio-pill flex-wrap">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm50" value="RM50">
+                                            <label class="form-check-label" for="rm50">RM50</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm100" value="RM100">
+                                            <label class="form-check-label" for="rm100">RM100</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm250" value="RM250">
+                                            <label class="form-check-label" for="rm250">RM250</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm500" value="RM500">
+                                            <label class="form-check-label" for="rm500">RM500</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm1000" value="RM1000">
+                                            <label class="form-check-label" for="rm1000">RM1000</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm2000" value="RM2000">
+                                            <label class="form-check-label" for="rm2000">RM2000</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="amount" id="rm3000" value="RM3000">
+                                            <label class="form-check-label" for="rm3000">RM3000</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <h6 class="text-dark mb-3 border-bottom pb-2 fw-700">Select Payment Method</h6>
+                                    <div class="d-flex gap-2 radio-pill radio_pills_payment flex-wrap">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="fpx" value="fpx">
+                                            <label class="form-check-label" for="fpx">
+                                                <span class="payment_main_info">FPX</span>
+                                                <span class="payment_sub_info">RM 500.00</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="e_wallet" value="e_wallet">
+                                            <label class="form-check-label" for="e_wallet">
+                                                <span class="payment_main_info">E-wallet</span>
+                                                <span class="payment_sub_info">RM 500.00</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="bnpl" value="bnpl">
+                                            <label class="form-check-label" for="bnpl">
+                                                <span class="payment_main_info">BNPL</span>
+                                                <span class="payment_sub_info">RM 500.00</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="cr_dr" value="cr_dr">
+                                            <label class="form-check-label" for="cr_dr">
+                                                <span class="payment_main_info">CR/DR</span>
+                                                <span class="payment_sub_info">RM 500.00</span>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                               
+                                
+                                <div class="col-12 text-end ">
+                                    <a href="./agents.html" class="btn btn-outline-secondary px-4 py-2"><i class="fa fa-x me-1"></i>Cancel</a>
+                            <a href="./agents.html" class="btn btn-primary btn_green_cs px-4 py-2"><i class="fa fa-arrow-up me-1"></i>Top Up</a>
+                             
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- js part  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ordersTable').DataTable({
+                responsive: true,
+                searching: false,  // Hide search bar
+                lengthChange: false, // Hide "Show Entries" dropdown
+                pageLength: 7
+            });
+        });
+    </script>
+</body>
+
+</html>

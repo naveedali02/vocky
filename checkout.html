@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="checkout_page">
+    <div class="main_banner">
+        <div class="main_header">
+            <nav class="navbar navbar_cs  bg-body-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/media/images/logo.svg" class="img-fluid" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./assets/media/images/logo.svg" alt="Logo" />
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body align-items-center header_btns">
+
+                            <div class="d-flex ms-auto flex-wrap gap-3">
+                                <a href="./admin/signup.html" class="btn btn-primary btn_primary_cs me-3">Sign up</a>
+                                <a href="./admin/login.html" class="btn btn-primary btn_primary_cs">Log In</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="banner_img">
+            <img src="./assets/media/images/checkout_banner.png" class="img-fluid w-100">
+
+        </div>
+
+    </div>
+    <div class="checkout_page_bg checkout_page_ptrn">
+        <div class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 py-3 checkout_upper_content">
+                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase ">Pub g Mobile</h2>
+
+                        <p class="fs-15 fw-300 text-white text-start">Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernaturaut odit aut fugit, sed quia consequuntur. Dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas.</p>
+                    </div>
+
+                </div>
+                <div class="checkout_details_wrapper">
+                    <div class="row">
+                        <div class="col-lg-5 d-lg-block d-none mb-3 mb-lg-0 order-2 order-lg-1">
+                            <div class="details_listing">
+
+                                <h5 class="fs-22 fw-600 mb-4 main_title">Here’s how it works:</h5>
+                                <ol class="ps-3">
+                                    <li class="py-1 text-white fs-15 fw-300">Enter your User ID and Zone ID.</li>
+                                    <li class="py-1 text-white fs-15 fw-300">
+                                        Select Diamonds, Twilight Pass, or Weekly Pass.</li>
+                                    <li class="py-1 text-white fs-15 fw-300">
+                                        Choose your preferred payment method.</li>
+                                    <li class="py-1 text-white fs-15 fw-300">
+                                        Complete your payment and enjoy instant delivery directly to your Mobile Legends
+                                        account.</li>
+                                </ol>
+                            </div>
+                            <div class="details_listing">
+
+                                <h5 class="fs-22 fw-600 main_title mb-4">Want to know more?</h5>
+                                <ul class="ps-3">
+                                    <li class="py-1 text-white fs-15 fw-300">Learn how to buy Weekly Diamond Pass: Click
+                                        here.
+                                    </li>
+                                    <li class="py-1 text-white fs-15 fw-300">Learn how to buy Twilight Pass: Click here.
+                                    </li>
+                                    <li class="py-1 text-white fs-15 fw-300">
+                                        Learn how to buy Starlight Membership: Click here.</li>
+                                    <li class="py-1 text-white fs-15 fw-300">
+                                        Learn more about [Time-Limited] Super Value Pass: Click here.</li>
+
+                                </ul>
+                            </div>
+                            <div class="details_listing">
+
+                                <p class="fs-15 fw-300 text-white mb-4">Sign in to your SEGENT account to access
+                                    exclusive Mobile Legends events and special
+                                    offers. Don’t have an account yet? Sign up today!
+                                </p>
+                                <p class="fs-15 fw-300 text-white mb-4">
+                                    Download and play Mobile Legends now with Segent by your side!</p>
+                                <p class="fs-15 fw-300 text-white mb-0">
+
+                                    Let us know if you'd like further tweaks to align with your company tone or
+                                    branding!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mb-3 mb-lg-0 order-1 order-lg-2">
+                            <div class="cart_form_card">
+                                <div class="d-flex mb-3 mb-md-5 cart_form_title_res">
+                                    <span class="me-2">
+                                        <img src="./assets/media/images/title_daimond.png" class="img-fluid">
+
+                                    </span>
+                                    <h5 class="mb-0 text-white fs-22 fw-500">Earn Up to 0.5% Rewards from Mobile Legends
+                                        and Payment Methods</h5>
+                                </div>
+                                <div class="mb-1 mb-md-4">
+                                    <p class="fw-500 fs-16 text-white user_email_res">Enter User ID:</p>
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mb-2 mb-md-3">
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Enter User ID">
+                                        </div>
+                                        <div class="col-5 mb-2 mb-md-3">
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Enter zone ID">
+                                        </div>
+                                        <div class="col-2 mb-2 mb-md-3">
+                                            <button type="button" class="btn btn-transparent popover_btn"
+                                                data-bs-toggle="popover" data-bs-html="true" data-bs-content='<img src="./assets/media/images/popover_img.png" width="250" alt="Popover Image">
+                                                '>
+                                                <img src="./assets/media/images/question_mark.svg" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="btn btn-transparent modal_btn"
+                                                data-bs-toggle="modal" data-bs-target="#mobileInformationModal">
+                                                <img src="./assets/media/images/question_mark.svg" class="img-fluid">
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="mb-2 mb-sm-4">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                        <p class="fw-500 fs-16 text-white user_email_res">Select Category:</p>
+                                        <p class="badge_purple main_dark_color fs-13"><svg width="13" height="12"
+                                                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.17965 0.464052L4.55433 0.0893555L4.43522 0.808475C4.24564 1.94398 3.46995 2.99908 2.61435 3.74054C0.939381 5.19267 0.572625 6.77086 1.09124 8.07361C1.58753 9.32028 2.84711 10.1739 4.12554 10.3163L4.42133 10.3491C3.6898 9.90193 3.22031 8.85725 3.38409 8.07659C3.54588 7.30933 4.09775 6.59071 5.15782 5.92767L5.69232 5.59417L5.89182 6.19219C6.00944 6.54555 6.21292 6.82942 6.41987 7.11776C6.51913 7.25672 6.61988 7.39717 6.71219 7.54656C7.0313 8.06518 7.11567 8.64186 6.90971 9.21408C6.72211 9.73419 6.41293 10.1431 5.98662 10.3699L6.46801 10.3163C7.66803 10.1828 8.54894 9.7724 9.12116 9.08604C9.68842 8.40563 9.88743 7.52968 9.88743 6.59716C9.88743 5.72866 9.5306 4.83336 9.10975 4.08843C8.61644 3.21596 7.97275 2.49138 7.27001 1.78914C7.14842 2.03232 7.15785 2.13058 6.90772 2.52116C6.58291 1.65859 5.97323 0.932833 5.17965 0.464052Z"
+                                                    fill="#4F1919" />
+                                            </svg>
+                                            12,919 items bought in the last hour</p>
+                                    </div>
+                                    <div class="select_cate_outer_wrap">
+                                        <div class="select_cate_outer">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">2x Recharge Bonus</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/2x_recharge.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="select_cate_outer">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Diamonds</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/diamonds.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="select_cate_outer">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Weekly Diamond Pass</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/weekly_pass.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="select_cate_outer">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Twilight Pass</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/twillight_pass.svg"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- <div class="row">
+                                        <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">2x Recharge Bonus</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/2x_recharge.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Diamonds</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/diamonds.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Weekly Diamond Pass</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/weekly_pass.svg" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                            <div class="category_card text-center">
+                                                <p class="text-white fw-600 fs-15">Twilight Pass</p>
+                                                <div>
+                                                    <img src="./assets/media/icons/twillight_pass.svg"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div> -->
+                                </div>
+                                <div class="mb-2 mb-sm-4">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <p class="fw-500 fs-16 text-white user_email_res">Select Items:</p>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+                                                    <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                    fill="#FF9900" />
+                                                            </svg>
+                                                        </span>POPULAR</p>
+                                                    <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                    <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                    <div>
+                                                        <img src="./assets/media/icons/items_diamonds.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+                                                    <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                    fill="#FF9900" />
+                                                            </svg>
+                                                        </span>POPULAR</p>
+                                                    <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                    <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                    <div>
+                                                        <img src="./assets/media/icons/items_diamonds.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+                                                    <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                    fill="#FF9900" />
+                                                            </svg>
+                                                        </span>POPULAR</p>
+                                                    <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                    <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                    <div>
+                                                        <img src="./assets/media/icons/items_diamonds.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+                                                    <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                    fill="#FF9900" />
+                                                            </svg>
+                                                        </span>POPULAR</p>
+                                                    <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                    <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                    <div>
+                                                        <img src="./assets/media/icons/items_diamonds.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+                                <div class="mb-2 mb-sm-4">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="fw-500 fs-16 text-white user_email_res">Select Payment:</p>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+
+
+                                                    <div class="payment_img">
+                                                        <img src="./assets/media/icons/fpx.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+
+
+                                                    <div class="payment_img">
+                                                        <img src="./assets/media/icons/duitnow-qr.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+
+
+                                                    <div class="payment_img">
+                                                        <img src="./assets/media/icons/spay.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-4 col-md-3 mb-3 mb-md-0 px-1 px-sm-2">
+                                            <div>
+                                                <div class="items_card text-center">
+
+
+                                                    <div class="payment_img">
+                                                        <img src="./assets/media/icons/visa.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="items_card_sub">
+                                                    <p class="mb-0 fs-14 fw-400 text-white">From</p>
+                                                    <p class="fs-20 fw-700 text-white mb-1">RM2.00</p>
+                                                    <div class="d-flex align-items-center flex-wrap">
+
+                                                        <p class="mb-0 fs-14 fw-400 text-white text_line mb-0 me-2">
+                                                            RM10.00
+                                                        </p><span
+                                                            class="bg-white fs-12 fw-600 px-2 py-1 rounded-4 text_purple">80%
+                                                            off</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="mb-2 mb-sm-4">
+                                    <p class="fw-500 fs-16 text-white user_email_res">Apply Coupon:</p>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 mb-3 mb-md-0">
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Enter Coupon Code">
+                                        </div>
+
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <button type="button" class="btn btn-primary btn_primary_cs px-5">
+                                                Apply
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <p class="fw-500 fs-16 text-white user_email_res">Check Out:</p>
+                                    <div class="checkout_card_inner">
+                                        <div class="row">
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0">
+                                                <div>
+                                                    <div class="category_card position-relative pt-4 text-center">
+                                                        <button class="btn btn-transparent cross_btn">
+                                                            <img src="./assets/media/icons/cross_btn.svg">
+                                                        </button>
+                                                        <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                    width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                        fill="#FF9900"></path>
+                                                                </svg>
+                                                            </span>POPULAR</p>
+                                                        <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                        <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                        <div>
+                                                            <img src="./assets/media/icons/items_diamonds.png"
+                                                                class="img-fluid">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6 col-md-3 mb-4 mb-md-0">
+                                                <div>
+                                                    <div class="category_card position-relative text-center  pt-4">
+                                                        <button class="btn btn-transparent cross_btn">
+                                                            <img src="./assets/media/icons/cross_btn.svg">
+                                                        </button>
+                                                        <p class="mb-0 badge_purple_border"><span class="me-2"><svg
+                                                                    width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M4.55676 0.257306C3.71294 0.15707 2.86095 0.15707 2.01713 0.257306L1.14357 0.36133C1.0809 0.368847 1.02263 0.398719 0.978621 0.445895C0.934613 0.493072 0.907563 0.55466 0.902045 0.620247L0.83468 1.41014C0.721773 2.73794 0.721773 4.07356 0.83468 5.40135L0.902045 6.19125C0.908069 6.26241 0.93941 6.32863 0.989894 6.37687C1.04038 6.42511 1.10634 6.45187 1.17479 6.45188H2.30905V10.6826C2.30915 10.7417 2.32683 10.7994 2.35965 10.8476C2.39248 10.8958 2.43882 10.9322 2.4923 10.9518C2.54578 10.9713 2.60376 10.9731 2.65824 10.9568C2.71273 10.9405 2.76103 10.907 2.79649 10.8609L3.01064 10.5808C4.28654 8.91399 5.30256 7.04759 6.02127 5.05041L6.12533 4.76063C6.14091 4.71739 6.14622 4.67085 6.14079 4.625C6.13536 4.57915 6.11936 4.53535 6.09417 4.49737C6.06897 4.45938 6.03532 4.42834 5.99611 4.4069C5.95689 4.38546 5.91328 4.37426 5.86901 4.37426H4.38314L5.65651 0.743704C5.67079 0.703078 5.67604 0.659598 5.67187 0.616544C5.6677 0.57349 5.65422 0.531987 5.63244 0.495165C5.61065 0.458343 5.58114 0.427164 5.54613 0.40398C5.51112 0.380796 5.47152 0.366213 5.43032 0.36133L4.55676 0.257306Z"
+                                                                        fill="#FF9900"></path>
+                                                                </svg>
+                                                            </span>POPULAR</p>
+                                                        <p class="text-white fw-600 fs-15 mb-0">14 Diamonds</p>
+                                                        <p class="text-white fw-400 fs-13">(13 + 1 Bonus)</p>
+                                                        <div>
+                                                            <img src="./assets/media/icons/items_diamonds.png"
+                                                                class="img-fluid">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="mb-2 mb-sm-4">
+                                            <p class="fs-16 fw-400 text-white mb-1">Final Price
+                                            </p>
+                                            <p class="mb-1 fw-700 fs-22 text-white">RM2.00
+                                            </p>
+                                            <span class="bg-white fs-14 fw-600 px-3 py-2 rounded-4 text_purple">80%
+                                                off</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p class="mb-1 me-3 text_grey_500">Please make sure your ID is typed
+                                                    correctly. We will not responsible
+                                                    for any mistake made during the process.</p>
+                                            </div>
+                                            <div class="col-4 text-md-end">
+                                                <a href="./confirmation.html"
+                                                    class="btn btn-primary btn_primary_cs px-5">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer_section">
+        <div class="container" style="border-bottom: 1px solid #e8e8e88b;">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="mb-2 mb-sm-4">
+                        <img src="./assets/media/images/logo.svg" class="img-fluid">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="me-3"><img src="./assets/media/icons/instagram.png"></a>
+                        <a href="#" class="me-3"><img src="./assets/media/icons/facebook.png"></a>
+                        <a href="#" class="me-3"><img src="./assets/media/icons/twitter.png"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <ul class="list-unstyled m-0 p-0">
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.13861 14.9895C5.57628 15.3496 6.03272 15.6788 6.5 16C6.96829 15.683 7.42251 15.3459 7.86139 14.9895C8.593 14.3904 9.28153 13.7408 9.92189 13.0455C11.3981 11.4357 13 9.10201 13 6.4824C13 5.63112 12.8319 4.78817 12.5052 4.00169C12.1786 3.21521 11.6998 2.5006 11.0962 1.89865C10.4926 1.2967 9.77606 0.819214 8.98744 0.493443C8.19883 0.167672 7.35359 0 6.5 0C5.64641 0 4.80117 0.167672 4.01256 0.493443C3.22394 0.819214 2.50739 1.2967 1.90381 1.89865C1.30022 2.5006 0.821439 3.21521 0.494783 4.00169C0.168127 4.78817 -1.27195e-08 5.63112 0 6.4824C0 9.10201 1.60189 11.4349 3.07811 13.0455C3.71845 13.741 4.40697 14.3901 5.13861 14.9895ZM6.5 8.82326C5.87748 8.82326 5.28045 8.57664 4.84026 8.13764C4.40007 7.69864 4.15278 7.10323 4.15278 6.4824C4.15278 5.86156 4.40007 5.26615 4.84026 4.82716C5.28045 4.38816 5.87748 4.14153 6.5 4.14153C7.12252 4.14153 7.71955 4.38816 8.15974 4.82716C8.59993 5.26615 8.84722 5.86156 8.84722 6.4824C8.84722 7.10323 8.59993 7.69864 8.15974 8.13764C7.71955 8.57664 7.12252 8.82326 6.5 8.82326Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>Kuala Lumpur,
+                                Malaysia</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.4368 0H11.5632C12.5185 0 13 0.4425 13 1.3425V7.6575C13 8.55 12.5185 9 11.5632 9H1.4368C0.481481 9 0 8.55 0 7.6575V1.3425C0 0.4425 0.481481 0 1.4368 0ZM6.49618 6.45L11.6473 2.3025C11.8307 2.1525 11.9759 1.8075 11.7466 1.5C11.525 1.1925 11.1199 1.185 10.8524 1.3725L6.49618 4.2675L2.14756 1.3725C1.88007 1.185 1.47501 1.1925 1.25338 1.5C1.0241 1.8075 1.16931 2.1525 1.35273 2.3025L6.49618 6.45Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>hi@segent.com</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="10" height="13" viewBox="0 0 10 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.65365 0.0691963C3.01205 -0.038027 3.39666 -0.0202136 3.74344 0.119671C4.09022 0.259556 4.37826 0.513073 4.5596 0.838019L4.62021 0.959113L5.16243 2.15461C5.32666 2.51754 5.3799 2.92032 5.31555 3.313C5.25119 3.70567 5.07207 4.07096 4.8004 4.36355L4.69147 4.47083L3.83719 5.2616C3.6832 5.40626 3.79869 5.96622 4.35565 6.92359C4.85692 7.78506 5.26481 8.18735 5.46548 8.20929H5.5007L5.54411 8.20117L7.22318 7.6916C7.44884 7.62293 7.68966 7.62021 7.91683 7.68377C8.14401 7.74733 8.34792 7.87448 8.50419 8.05L8.57872 8.14346L9.69019 9.67136C9.90801 9.97083 10.0166 10.335 9.99795 10.7039C9.97934 11.0727 9.83468 11.4243 9.5878 11.7007L9.48788 11.8031L9.04395 12.2208C8.64531 12.5954 8.14664 12.8486 7.60724 12.9501C7.06783 13.0517 6.51037 12.9974 6.00114 12.7938C4.41626 12.1599 2.97636 10.7116 1.66832 8.46367C0.357822 6.21003 -0.186852 4.24571 0.0564083 2.5634C0.13002 2.05486 0.341064 1.5756 0.667128 1.17651C0.993191 0.77742 1.4221 0.473407 1.9083 0.296755L2.06638 0.244742L2.65365 0.0691963Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                03 3333 3333</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <ul class="list-unstyled m-0 p-0">
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.13861 14.9895C5.57628 15.3496 6.03272 15.6788 6.5 16C6.96829 15.683 7.42251 15.3459 7.86139 14.9895C8.593 14.3904 9.28153 13.7408 9.92189 13.0455C11.3981 11.4357 13 9.10201 13 6.4824C13 5.63112 12.8319 4.78817 12.5052 4.00169C12.1786 3.21521 11.6998 2.5006 11.0962 1.89865C10.4926 1.2967 9.77606 0.819214 8.98744 0.493443C8.19883 0.167672 7.35359 0 6.5 0C5.64641 0 4.80117 0.167672 4.01256 0.493443C3.22394 0.819214 2.50739 1.2967 1.90381 1.89865C1.30022 2.5006 0.821439 3.21521 0.494783 4.00169C0.168127 4.78817 -1.27195e-08 5.63112 0 6.4824C0 9.10201 1.60189 11.4349 3.07811 13.0455C3.71845 13.741 4.40697 14.3901 5.13861 14.9895ZM6.5 8.82326C5.87748 8.82326 5.28045 8.57664 4.84026 8.13764C4.40007 7.69864 4.15278 7.10323 4.15278 6.4824C4.15278 5.86156 4.40007 5.26615 4.84026 4.82716C5.28045 4.38816 5.87748 4.14153 6.5 4.14153C7.12252 4.14153 7.71955 4.38816 8.15974 4.82716C8.59993 5.26615 8.84722 5.86156 8.84722 6.4824C8.84722 7.10323 8.59993 7.69864 8.15974 8.13764C7.71955 8.57664 7.12252 8.82326 6.5 8.82326Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>Kuala Lumpur,
+                                Malaysia</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.4368 0H11.5632C12.5185 0 13 0.4425 13 1.3425V7.6575C13 8.55 12.5185 9 11.5632 9H1.4368C0.481481 9 0 8.55 0 7.6575V1.3425C0 0.4425 0.481481 0 1.4368 0ZM6.49618 6.45L11.6473 2.3025C11.8307 2.1525 11.9759 1.8075 11.7466 1.5C11.525 1.1925 11.1199 1.185 10.8524 1.3725L6.49618 4.2675L2.14756 1.3725C1.88007 1.185 1.47501 1.1925 1.25338 1.5C1.0241 1.8075 1.16931 2.1525 1.35273 2.3025L6.49618 6.45Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>hi@segent.com</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="10" height="13" viewBox="0 0 10 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.65365 0.0691963C3.01205 -0.038027 3.39666 -0.0202136 3.74344 0.119671C4.09022 0.259556 4.37826 0.513073 4.5596 0.838019L4.62021 0.959113L5.16243 2.15461C5.32666 2.51754 5.3799 2.92032 5.31555 3.313C5.25119 3.70567 5.07207 4.07096 4.8004 4.36355L4.69147 4.47083L3.83719 5.2616C3.6832 5.40626 3.79869 5.96622 4.35565 6.92359C4.85692 7.78506 5.26481 8.18735 5.46548 8.20929H5.5007L5.54411 8.20117L7.22318 7.6916C7.44884 7.62293 7.68966 7.62021 7.91683 7.68377C8.14401 7.74733 8.34792 7.87448 8.50419 8.05L8.57872 8.14346L9.69019 9.67136C9.90801 9.97083 10.0166 10.335 9.99795 10.7039C9.97934 11.0727 9.83468 11.4243 9.5878 11.7007L9.48788 11.8031L9.04395 12.2208C8.64531 12.5954 8.14664 12.8486 7.60724 12.9501C7.06783 13.0517 6.51037 12.9974 6.00114 12.7938C4.41626 12.1599 2.97636 10.7116 1.66832 8.46367C0.357822 6.21003 -0.186852 4.24571 0.0564083 2.5634C0.13002 2.05486 0.341064 1.5756 0.667128 1.17651C0.993191 0.77742 1.4221 0.473407 1.9083 0.296755L2.06638 0.244742L2.65365 0.0691963Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                03 3333 3333</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <ul class="list-unstyled m-0 p-0">
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.13861 14.9895C5.57628 15.3496 6.03272 15.6788 6.5 16C6.96829 15.683 7.42251 15.3459 7.86139 14.9895C8.593 14.3904 9.28153 13.7408 9.92189 13.0455C11.3981 11.4357 13 9.10201 13 6.4824C13 5.63112 12.8319 4.78817 12.5052 4.00169C12.1786 3.21521 11.6998 2.5006 11.0962 1.89865C10.4926 1.2967 9.77606 0.819214 8.98744 0.493443C8.19883 0.167672 7.35359 0 6.5 0C5.64641 0 4.80117 0.167672 4.01256 0.493443C3.22394 0.819214 2.50739 1.2967 1.90381 1.89865C1.30022 2.5006 0.821439 3.21521 0.494783 4.00169C0.168127 4.78817 -1.27195e-08 5.63112 0 6.4824C0 9.10201 1.60189 11.4349 3.07811 13.0455C3.71845 13.741 4.40697 14.3901 5.13861 14.9895ZM6.5 8.82326C5.87748 8.82326 5.28045 8.57664 4.84026 8.13764C4.40007 7.69864 4.15278 7.10323 4.15278 6.4824C4.15278 5.86156 4.40007 5.26615 4.84026 4.82716C5.28045 4.38816 5.87748 4.14153 6.5 4.14153C7.12252 4.14153 7.71955 4.38816 8.15974 4.82716C8.59993 5.26615 8.84722 5.86156 8.84722 6.4824C8.84722 7.10323 8.59993 7.69864 8.15974 8.13764C7.71955 8.57664 7.12252 8.82326 6.5 8.82326Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>Kuala Lumpur,
+                                Malaysia</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.4368 0H11.5632C12.5185 0 13 0.4425 13 1.3425V7.6575C13 8.55 12.5185 9 11.5632 9H1.4368C0.481481 9 0 8.55 0 7.6575V1.3425C0 0.4425 0.481481 0 1.4368 0ZM6.49618 6.45L11.6473 2.3025C11.8307 2.1525 11.9759 1.8075 11.7466 1.5C11.525 1.1925 11.1199 1.185 10.8524 1.3725L6.49618 4.2675L2.14756 1.3725C1.88007 1.185 1.47501 1.1925 1.25338 1.5C1.0241 1.8075 1.16931 2.1525 1.35273 2.3025L6.49618 6.45Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>hi@segent.com</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="fs-16 fw-500 text-white text-decoration-none"><span class="me-2"><svg
+                                        width="10" height="13" viewBox="0 0 10 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.65365 0.0691963C3.01205 -0.038027 3.39666 -0.0202136 3.74344 0.119671C4.09022 0.259556 4.37826 0.513073 4.5596 0.838019L4.62021 0.959113L5.16243 2.15461C5.32666 2.51754 5.3799 2.92032 5.31555 3.313C5.25119 3.70567 5.07207 4.07096 4.8004 4.36355L4.69147 4.47083L3.83719 5.2616C3.6832 5.40626 3.79869 5.96622 4.35565 6.92359C4.85692 7.78506 5.26481 8.18735 5.46548 8.20929H5.5007L5.54411 8.20117L7.22318 7.6916C7.44884 7.62293 7.68966 7.62021 7.91683 7.68377C8.14401 7.74733 8.34792 7.87448 8.50419 8.05L8.57872 8.14346L9.69019 9.67136C9.90801 9.97083 10.0166 10.335 9.99795 10.7039C9.97934 11.0727 9.83468 11.4243 9.5878 11.7007L9.48788 11.8031L9.04395 12.2208C8.64531 12.5954 8.14664 12.8486 7.60724 12.9501C7.06783 13.0517 6.51037 12.9974 6.00114 12.7938C4.41626 12.1599 2.97636 10.7116 1.66832 8.46367C0.357822 6.21003 -0.186852 4.24571 0.0564083 2.5634C0.13002 2.05486 0.341064 1.5756 0.667128 1.17651C0.993191 0.77742 1.4221 0.473407 1.9083 0.296755L2.06638 0.244742L2.65365 0.0691963Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                03 3333 3333</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <div class="row justify-content-between">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="fs-14 text_grey_500 mb-0">Terms of Use & Privacy Policy</p>
+                </div>
+                <div class="col-md-6 text-md-end text-start">
+                    <p class="fs-14 text_grey_500 mb-0">©2025 SEGENT. All Rights Reserved</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- mobile information modal  -->
+    <div class="modal fade" id="mobileInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="mobileInformationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <!-- <h5 class="modal-title" id="mobileInformationModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close btn_mobile_info" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src="./assets/media/images/popover_img.png" width="250" alt="Popover Image">
+                    </div>
+                    <div class="details_listing mb-3">
+
+                        <h5 class="fs-22 fw-600 text-dark mb-4">Here’s how it works:</h5>
+                        <ol class="ps-3">
+                            <li class="py-1 text-dark fs-15 fw-500">Enter your User ID and Zone ID.</li>
+                            <li class="py-1 text-dark fs-15 fw-500">
+                                Select Diamonds, Twilight Pass, or Weekly Pass.</li>
+                            <li class="py-1 text-dark fs-15 fw-500">
+                                Choose your preferred payment method.</li>
+                            <li class="py-1 text-dark fs-15 fw-500">
+                                Complete your payment and enjoy instant delivery directly to your Mobile Legends
+                                account.</li>
+                        </ol>
+                    </div>
+                    <div class="details_listing mb-3">
+
+                        <h5 class="fs-22 fw-600 text-dark mb-4">Want to know more?</h5>
+                        <ul class="ps-3">
+                            <li class="py-1 text-dark fs-15 fw-500">Learn how to buy Weekly Diamond Pass: Click
+                                here.
+                            </li>
+                            <li class="py-1 text-dark fs-15 fw-500">Learn how to buy Twilight Pass: Click here.
+                            </li>
+                            <li class="py-1 text-dark fs-15 fw-500">
+                                Learn how to buy Starlight Membership: Click here.</li>
+                            <li class="py-1 text-dark fs-15 fw-500">
+                                Learn more about [Time-Limited] Super Value Pass: Click here.</li>
+
+                        </ul>
+                    </div>
+                    <div class="details_listing mb-3">
+
+                        <p class="fs-15 fw-400 text-dark mb-4">Sign in to your SEGENT account to access
+                            exclusive Mobile Legends events and special
+                            offers. Don’t have an account yet? Sign up today!
+                        </p>
+                        <p class="fs-15 fw-400 text-dark mb-4">
+                            Download and play Mobile Legends now with Segent by your side!</p>
+                        <p class="fs-15 fw-400 text-dark mb-0">
+
+                            Let us know if you'd like further tweaks to align with your company tone or
+                            branding!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            var popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+        });
+    </script>
+</body>
+
+</html>
