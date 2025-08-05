@@ -50,9 +50,17 @@ body {
 .main_header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+}
+.main_header.scrolled {
+  
+background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(227, 202, 164, 0.2) 0%, rgba(227, 202, 164, 0.16) 77.08%, rgba(227, 202, 164, 0.04) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+background-blend-mode: overlay, normal;
+backdrop-filter: blur(40px);
+border-bottom: 0.5px solid #e3caa4;
 }
 
 .btn_primary_cs {
@@ -244,6 +252,9 @@ body {
 .fs-40 {
   font-size: 40px;
 }
+.fw-200 {
+  font-weight: 200;
+}
 .fw-300 {
   font-weight: 300;
 }
@@ -265,9 +276,9 @@ body {
 .fw-900 {
   font-weight: 900;
 }
-.offers_section {
+/* .offers_section {
   margin-top: -44px;
-}
+} */
 .offers_slider_sec {
   background: linear-gradient(
     180deg,
@@ -306,20 +317,23 @@ body {
 .slick-prev,
 .slick-next {
   position: absolute;
-  top: -45px;
+  /* top: -45px; */
   z-index: 10;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
 }
 
 .slick-prev {
-  right: 40px;
-  left: auto;
+  left: -42px;
 }
 
 .slick-next {
-  right: 10px;
+  right: -42px;
 }
 
 .slider_item {
@@ -355,10 +369,6 @@ body {
 }
 .popular_games_section {
   padding: 60px 0 40px 0;
-  /* background: url("../media/images/circle_ptrn.png") no-repeat top center; */
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
 }
 .box_ptrn {
   width: 100%;
@@ -468,12 +478,13 @@ body {
   transform: scale(1.05);
 }
 .about_segent_box {
-  background: url("../media/images/about_banner.png") no-repeat center center;
+  background: url("../media/images/why-us.png") no-repeat center center;
   background-size: cover;
 
-  border: 1px solid #ffffff;
-  border-radius: 18px;
-  padding: 100px 20px;
+  border: 1px solid #e3caa4;
+  box-shadow: -1px 13px 19.9px -15px rgba(164, 12, 12, 0.2);
+  border-radius: 13px;
+  padding: 80px 34px;
 }
 .why_us_section {
   background: url("../media/images/why_us_bg.png") no-repeat top center;
@@ -514,6 +525,18 @@ body {
   background-size: cover; */
   padding: 100px 0 0px 0px;
   position: relative;
+}
+.footer_section::before{
+  content: "";
+  background: url("../media/images/test_ptrn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .text_grey_500 {
   color: #bcbcbc;
@@ -731,7 +754,7 @@ body {
   display: none;
 }
 .navbar-brand img {
-  width: 170px;
+  width: 110px;
 }
 .menu_icon_text {
   font-style: normal;
@@ -2616,11 +2639,13 @@ input.file-input[type="file"] {
   top: 46px;
   padding-top: 0px;
   /* display: block !important; */
-  background: url("../media/images/searc_bg.jpg");
+  /* background: url("../media/images/searc_bg.jpg"); */
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
-  border: 2px solid #2bffff29;
+
+  background: rgba(251, 251, 251, 0.1);
+  border: 0.805145px solid #dedede;
+  border-radius: 7.15684px;
 }
 .search_listing_wrapper ul {
   list-style: none;
@@ -2664,10 +2689,10 @@ input.file-input[type="file"] {
   color: #d3d3d3;
   font-size: 12px;
 }
-.logo_area,
+/* .logo_area,
 .searchbar_area {
   width: 50%;
-}
+} */
 .header_container {
   flex-wrap: nowrap;
 }
@@ -2808,9 +2833,153 @@ input.file-input[type="file"] {
   margin: 0 auto;
 }
 
-.form_select_cs::placeholder{
-  color: #afafaf;;
+.form_select_cs::placeholder {
+  color: #afafaf;
 }
 .form_select_cs:focus {
   background-color: rgba(251, 251, 251, 0.1) !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  flex: 0 1 auto;
+  width: 8px;
+  height: 8px;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+}
+
+.carousel-indicators {
+  justify-content: end;
+
+  margin-right: 30px;
+}
+
+.offer-slider.popular_games_slide .slick-slide {
+  margin: 0 16px; /* 10px space left and right */
+}
+
+.offer-slider.popular_games_slide .slick-list {
+  margin: 0 -16px; /* negative margin to balance total width */
+}
+.offer-slider.popular_games_slide .all_game_card {
+  filter: unset !important;
+}
+.popular_games_section {
+  position: relative;
+  z-index: 2;
+}
+.popular_games_section::before {
+  content: "";
+  background: url("../media/images/test_ptrn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.boost_game_home_card {
+  background: url(.png),
+    radial-gradient(
+        90.16% 143.01% at 15.32% 21.04%,
+        rgba(227, 202, 164, 0.2) 0%,
+        rgba(110, 191, 244, 0) 77.08%,
+        rgba(70, 144, 213, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
+  border-radius: 13px;
+  padding: 7% 9%;
+  border: 1px solid #e3caa4;
+}
+.affi_slider .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.testimonial_slider .slick-slide {
+  margin: 0 12px; /* 10px space left and right */
+}
+
+.testimonial_slider .slick-list {
+  margin: 0 -12px; /* negative margin to balance total width */
+}
+.op_7{
+  opacity: 0.7;
+}
+.op_8{
+  opacity: 0.8;
+}
+.testimonial_slider .slick-prev,
+.testimonial_slider .slick-next {
+  top: -38px;
+}
+.testimonial_slider .slick-next {
+  right: 6px;
+}
+.testimonial_slider .slick-prev {
+  left: auto;
+  right: 48px;
+}
+.accordion_card {
+  background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(227, 202, 164, 0.2) 0%, rgba(110, 191, 244, 0) 77.08%, rgba(70, 144, 213, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
+  border-radius: 13px;
+  padding: 16px;
+  border: 1px solid #e3caa4;
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  color: #fff;
+
+
+
+background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(227, 202, 164, 0.2) 0%, rgba(227, 202, 164, 0.16) 77.08%, rgba(227, 202, 164, 0.04) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+background-blend-mode: overlay, normal;
+backdrop-filter: blur(40px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 13px;
+border: 0.5px solid #e3caa4;
+
+}
+
+.custom-accordion .accordion-button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: none;
+  position: relative;
+}
+
+.custom-accordion .accordion-button::after {
+  content: '+';
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  content: '–';
+}
+
+.custom-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-body {
+  background-color: transparent;
+  color: #ccc;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 1.7;
 }
