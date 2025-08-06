@@ -9,19 +9,20 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="main_banner">
         <div class="main_header">
-            <nav class="navbar navbar_cs navbar-expand-sm bg-body-light">
+            <nav class="navbar navbar_cs  bg-body-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
                         <img src="./assets/media/images/logo.png" class="img-fluid" />
                     </a>
                     <div class="d-flex align-items-center searchbar_area gap-2">
-
                         <div class="position-relative">
                             <div class="d-flex align-items-center position-relative search_area_wrapper">
                                 <input type="text" class="form-control search_input  search_area_input"
@@ -101,9 +102,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="navbar-brand m-0" data-bs-toggle="offcanvas" href="#offcanvasNavBar" role="button"
-                            aria-controls="offcanvasNavBar">
-
+                        <button class="navbar-toggler navbar_toggler_cs border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="menu_icon_text mx-2">MENU</span>
                             <span class="menu_icon_sidebar">
                                 <svg width="24" height="24" viewBox="0 0 29 29" fill="none"
@@ -120,13 +120,31 @@
                                 </svg>
 
                             </span>
-                        </a>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="./assets/media/images/logo.svg" alt="Logo" />
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body align-items-center header_btns">
 
+                                <div class="">
+                                    <a href="./admin/signup.html" class="btn btn-primary btn_primary_cs d-block w-100 mb-3">Sign
+                                        up</a>
+                                    <a href="./admin/login.html" class="btn btn-primary btn_primary_cs d-block w-100">Log In</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
             </nav>
-
         </div>
 
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -159,13 +177,13 @@
         </div>
     </div>
 
-    <div class="popular_games_section">
+    <div class="popular_games_section popular_games_bg">
 
         <div class="container">
             <div class="row g-3">
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-2 mb-sm-3">
                     <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">POPULAR GAMES</h2>
+                        <h2 class="text-start main_title fs-30 fw-700 mb-0 text-uppercase">POPULAR GAMES</h2>
                         <div class="">
                             <button class="btn btn-primary btn_primary_cs">Boosting</button>
                         </div>
@@ -173,38 +191,38 @@
                 </div>
                 <div class="col-12">
                     <div class="offer-slider popular_games_slide ">
-                        <div>
-                            <a href="#" class="all_ganmes_link">
+                        <div data-aos="fade-up" >
+                            <a href="./checkout.html" class="all_ganmes_link">
                                 <div class="all_game_card">
                                     <img src="./assets/media/images/game_1.png" class="img-fluid" />
                                 </div>
                             </a>
                         </div>
-                        <div>
-                            <a href="#" class="all_ganmes_link">
+                        <div data-aos="fade-up" data-aos-delay="100">
+                            <a href="./checkout.html" class="all_ganmes_link">
+                                <div class="all_game_card">
+                                    <img src="./assets/media/images/game_2.png" class="img-fluid" />
+                                </div>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="150">
+                            <a href="./checkout.html" class="all_ganmes_link">
+                                <div class="all_game_card">
+                                    <img src="./assets/media/images/game_3.png" class="img-fluid" />
+                                </div>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <a href="./checkout.html" class="all_ganmes_link">
                                 <div class="all_game_card">
                                     <img src="./assets/media/images/game_1.png" class="img-fluid" />
                                 </div>
                             </a>
                         </div>
-                        <div>
-                            <a href="#" class="all_ganmes_link">
+                        <div data-aos="fade-up" data-aos-delay="300" >
+                            <a href="./checkout.html" class="all_ganmes_link">
                                 <div class="all_game_card">
-                                    <img src="./assets/media/images/game_1.png" class="img-fluid" />
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="all_ganmes_link">
-                                <div class="all_game_card">
-                                    <img src="./assets/media/images/game_1.png" class="img-fluid" />
-                                </div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="all_ganmes_link">
-                                <div class="all_game_card">
-                                    <img src="./assets/media/images/game_1.png" class="img-fluid" />
+                                    <img src="./assets/media/images/game_2.png" class="img-fluid" />
                                 </div>
                             </a>
                         </div>
@@ -221,15 +239,16 @@
     <div class="boost_game_home_sec responsive_affli_desk">
         <div class="container">
             <div class="row g-3">
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-2 mb-sm-3">
                     <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">Boosting Service</h2>
-                        <div class="">
+                        <h2 class="text-start main_title fs-30 fw-700 mb-0 text-uppercase" data-aos="fade-up">Boosting
+                            Service</h2>
+                        <div class="" data-aos="fade-up" data-aos-delay="100">
                             <button class="btn btn-primary btn_primary_cs">View Packages</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
@@ -247,7 +266,7 @@
                             of service and safety.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="67" height="68" viewBox="0 0 67 68" fill="none"
@@ -266,7 +285,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="67" height="68" viewBox="0 0 67 68" fill="none"
@@ -293,13 +312,40 @@
         </div>
 
     </div>
+    <div class="about_us_section px-3" data-aos="fade-up">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 about_segent_box">
+                        <div class="" style="max-width: 300px;" data-aos="fade-up" data-aos-delay="100">
+                            <p class="fw-400 fs-16 main_title text-start mb-0">Why choose</p>
+                            <h2 class="text-start main_title fs-40 fw-700 text-uppercase mb-sm-3 mb-md-5 mb-2">
+                                vokey?</h2>
+                            <div>
+                                <ul class="why_chose_us_ul">
+                                    <li class="text-start main_title fs-20 fw-600 my-3">Trusted Seller</li>
+                                    <li class="text-start main_title fs-20 fw-600 my-3">Fast Delivery</li>
+                                    <li class="text-start main_title fs-20 fw-600 my-3">Secure Payment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     <div class="boost_game_home_sec responsive_affli">
         <div class="container">
             <div class="row g-3">
                 <div class="col-12 mb-3">
                     <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">Boosting Service</h2>
-                        <div class="">
+                        <h2 class="text-start main_title fs-30 fw-700 mb-0 text-uppercase" data-aos="fade-up">Boosting
+                            Service</h2>
+                        <div class="data-aos=" fade-up"">
                             <button class="btn btn-primary btn_primary_cs">View Packages</button>
                         </div>
                     </div>
@@ -307,7 +353,7 @@
 
             </div>
             <div class="affi_slider">
-                <div class="">
+                <div class="" >
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
@@ -325,7 +371,7 @@
                             of service and safety.</h6>
                     </div>
                 </div>
-                <div class="">
+                <div class="" >
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="67" height="68" viewBox="0 0 67 68" fill="none"
@@ -344,7 +390,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="">
+                <div class="" >
                     <div class="boost_game_home_card">
                         <div class="mb-4">
                             <svg width="67" height="68" viewBox="0 0 67 68" fill="none"
@@ -376,7 +422,7 @@
             <div class="row g-3">
                 <div class="col-12 mb-3">
                     <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">User Testimonials
+                        <h2 class="text-start main_title fs-30 fw-700 mb-0 text-uppercase">User Testimonials
                         </h2>
 
                     </div>
@@ -385,7 +431,7 @@
             </div>
             <div class="testimonial_slider">
                 <div class="">
-                    <div class="boost_game_home_card">
+                    <div class="boost_game_home_card" data-aos="fade-up">
                         <div class="mb-4 d-flex align-items-start justify-content-between gap-3">
                             <div>
                                 <h5 class="fw-600 text-white">Nicola Scott</h5>
@@ -457,7 +503,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="boost_game_home_card">
+                    <div class="boost_game_home_card" data-aos="fade-up" data-aos-delay="100">
                         <div class="mb-4 d-flex align-items-start justify-content-between gap-3">
                             <div>
                                 <h5 class="fw-600 text-white">Nicola Scott</h5>
@@ -529,7 +575,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="boost_game_home_card">
+                    <div class="boost_game_home_card" data-aos="fade-up" data-aos-delay="150">
                         <div class="mb-4 d-flex align-items-start justify-content-between gap-3">
                             <div>
                                 <h5 class="fw-600 text-white">Nicola Scott</h5>
@@ -601,7 +647,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="boost_game_home_card">
+                    <div class="boost_game_home_card" data-aos="fade-up" data-aos-delay="200">
                         <div class="mb-4 d-flex align-items-start justify-content-between gap-3">
                             <div>
                                 <h5 class="fw-600 text-white">Nicola Scott</h5>
@@ -677,38 +723,13 @@
         </div>
 
     </div>
-    <div class="about_us_section px-3">
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 about_segent_box">
-                        <div class="" style="max-width: 300px;">
-                            <p class="fw-400 fs-16 main_title text-start mb-0">Why choose</p>
-                            <h2 class="text-start main_title fs-40 fw-700 text-uppercase mb-5">
-                                vokey?</h2>
-                            <div>
-                                <ul>
-                                    <li class="text-start main_title fs-20 fw-600 my-3">Trusted Seller</li>
-                                    <li class="text-start main_title fs-20 fw-600 my-3">Fast Delivery</li>
-                                    <li class="text-start main_title fs-20 fw-600 my-3">Secure Payment</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
     <div class="accordion_sec">
         <div class="container">
             <div class="row g-3">
                 <div class="col-12">
                     <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                        <h2 class="text-start main_title fs-36 fw-700 mb-2 mb-sm-2 text-uppercase">Frequently asked
+                        <h2 class="text-start main_title fs-30 fw-700 mb-0 text-uppercase">Frequently asked
                             questions</h2>
 
                     </div>
@@ -716,7 +737,7 @@
                 <div class="col-12">
                     <div class="accordion_card">
                         <div class="accordion custom-accordion" id="accordionExample">
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" >
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -736,7 +757,7 @@
                             </div>
 
                             <!-- Repeatable Items -->
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -751,7 +772,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
@@ -767,7 +788,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
                                 <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
@@ -794,8 +815,8 @@
 
     <div class="footer_section">
         <div class="container pb-3" style="border-bottom: 1px solid #e8e8e88b;">
-            <div class="row">
-                <div class="col-md-3 col-lg-4">
+            <div class="row g-3">
+                <div class="col-6 col-md-3 col-lg-4 mb-md-0 mb-3">
                     <div class="mb-5">
                         <img src="./assets/media/images/logo.png" class="img-fluid">
                     </div>
@@ -806,7 +827,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-6 col-md-3 mb-md-0 mb-3">
                     <h5 class="fw-500 text_grey_500 fs-20 mb-4">Quick Links</h5>
                     <ul class="list-unstyled m-0 p-0">
                         <li class="py-2">
@@ -828,7 +849,7 @@
 
                     </ul>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-6 col-md-3 mb-md-0 mb-3">
                     <h5 class="fw-500 text_grey_500 fs-20 mb-4">Contact Us</h5>
 
                     <ul class="list-unstyled m-0 p-0">
@@ -867,7 +888,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2 mb-md-0 mb-3">
                     <h5 class="fw-500 text_grey_500 fs-20 mb-4">Payment Method</h5>
 
                     <div class="d-flex align-items-center gap-2 flex-wrap">
@@ -1011,6 +1032,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <script>
         $(document).ready(function () {
             var totalSlides = $('.slick-slide').length;
