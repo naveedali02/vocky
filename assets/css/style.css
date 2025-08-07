@@ -633,7 +633,7 @@ body {
   backdrop-filter: blur(42px);
   border-radius: 12px;
   padding: 16px;
-  border: 1px solid #59322f;
+  border: 1px solid #E3CAA4;
   height: 100%;
 }
 .items_card {
@@ -646,7 +646,7 @@ body {
   backdrop-filter: blur(42px);
   border-radius: 12px 12px 0 0;
   padding: 32px 16px 16px 16px;
-  border: 1px solid #59322f;
+  border: 1px solid #FFFFFF0D;
   border-bottom: 0;
   position: relative;
   background: url("../media/images/card_bg_img.png");
@@ -1611,8 +1611,9 @@ input.file-input[type="file"] {
   /* background: url("../media/images/searc_bg.jpg"); */
   background-size: cover;
   background-position: center;
-
-  background: rgba(251, 251, 251, 0.1);
+  background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(227, 202, 164, 0.2) 0%, rgba(227, 202, 164, 0.16) 77.08%, rgba(227, 202, 164, 0.04) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(20px);
   border: 0.805145px solid #dedede;
   border-radius: 7.15684px;
 }
@@ -1819,6 +1820,7 @@ input.file-input[type="file"] {
   border-radius: 13px;
   padding: 7% 9%;
   border: 1px solid #e3caa4;
+  height: 100%;
 }
 .affi_slider .slick-track {
   display: flex;
@@ -1888,7 +1890,7 @@ input.file-input[type="file"] {
 .custom-accordion .accordion-button {
   background-color: transparent;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 10px;
   padding: 15px 20px;
   box-shadow: none;
@@ -1940,9 +1942,47 @@ input.file-input[type="file"] {
 .boostap_game_main{
   margin-top: -100px;
 }
+.vouchers_price{
+
+background: #E3CAA4;
+border-radius: 14px;
+padding: 24px;
+text-align: center;
+/* display: flex;
+align-items: center;
+justify-content: center; */
+color: #331717;
+
+}
+.voucher_avalable_list{
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.voucher_radio_icon{
+  display: none;
+}
+.voucher_avalable_list:hover .voucher_radio_icon{
+  display: block !important;
+}
+.Unavailable_voch{
+  opacity: 0.6;
+  pointer-events: none;
+}
+.form-control::placeholder{
+  font-size: 14px;
+}
 /* media quries  */
 
 @media only screen and (max-width: 1200.5px) {
+  .boost_your_rank_card {
+    min-height: 540px;
+}
+.rank_form_wrapper {
+  width: 40%;
+}
+.boostap_game_main {
+  margin-top: 40px;
+}
   .navbar-brand img {
     width: 180px;
   }
@@ -1972,6 +2012,13 @@ input.file-input[type="file"] {
   }
 }
 @media only screen and (max-width: 992.5px) {
+  .popular_games_section {
+    padding: 50px 0 50px 0;
+}
+.boost_game_home_sec, .accordion_sec {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
   .navbar-brand img {
     width: 170px;
   }
@@ -2040,6 +2087,13 @@ input.file-input[type="file"] {
   }
 }
 @media only screen and (max-width: 767.5px) {
+  .boost_game_home_sec, .accordion_sec {
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+  .popular_games_section {
+    padding: 50px 0 50px 0;
+}
   .slider-container {
     top: 30%;
   }
@@ -2195,6 +2249,15 @@ input.file-input[type="file"] {
   }
 }
 @media only screen and (max-width: 540px) {
+  .form_select_cs {
+    font-size: 10px;
+    line-height: 26px;}
+    .rank_form_wrapper {
+      width: 48%;
+  }
+  .boost_your_rank_card {
+    min-height: 400px;
+}
   .game_img.bangbang_game img {
     margin-top: -20%;
     transform: scale(1.1);
@@ -2535,8 +2598,8 @@ input.file-input[type="file"] {
     height: 80px;
   }
   .confirmation_category_card svg {
-    width: 24px;
-    height: 30px;
+    width: 12px;
+    height: 18px;
   }
   .banner_sec .banner_title {
     margin-bottom: 8px;
@@ -2616,6 +2679,20 @@ input.file-input[type="file"] {
   }
 }
 @media only screen and (min-width: 1994px) {
+  .boost_your_rank_card {
+    min-height: 850px;
+}
+.form_label_cs {
+  font-size: 24px;
+  line-height: 40px;
+}
+.form_select_cs {
+  font-size: 24px;
+  line-height: 46px;
+}
+.checkout_shild_card {
+  max-width: 280px;
+}
   .menu_icon_text {
     font-size: 18px;
     line-height: 20px;
@@ -2631,7 +2708,7 @@ input.file-input[type="file"] {
   .main_banner {
     background-size: cover;
     max-height: 100%;
-    height: calc(100vh - 210px);
+    height: 100%;
   }
   .banner_title {
     font-weight: 800;
@@ -2919,7 +2996,7 @@ input.file-input[type="file"] {
     max-width: 2000px;
   }
   .main_banner {
-    height: 80vh;
+    height: 100%;
   }
   .container {
     max-width: 3200px;
