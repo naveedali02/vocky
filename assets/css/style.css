@@ -1433,15 +1433,17 @@ input.file-input[type="file"] {
 .form-switch .form-check-input {
   width: 60px;
   height: 28px;
-  background-color: #ddd;
+  background-color: #e2e2e2;
   border: none;
   position: relative;
 }
-
+/* .form-switch .form-check-input{
+  filter: invert(1);
+} */
 .form-switch .form-check-input::after {
   content: "No";
   position: absolute;
-  color: #fff;
+  color: #270303;;
   font-size: 12px;
   font-weight: 600;
   top: 5px;
@@ -1450,7 +1452,7 @@ input.file-input[type="file"] {
 }
 
 .form-switch .form-check-input:checked {
-  background-color: #198754;
+  background-color: #e3caa4;
 }
 
 .form-switch .form-check-input:checked::after {
@@ -1924,7 +1926,20 @@ input.file-input[type="file"] {
   margin-top: 8px;
   margin-left: 8px;
 }
+.checkout_shild_card{
+  max-width: 160px;
+}
+.available_player_header{
+  padding: 10px 0;
+   border-bottom: 1px solid #ffffff7b;
+}
+.boost_list .confirm_item_detail:last-child{
+  border-bottom: 0 !important;
 
+}
+.boostap_game_main{
+  margin-top: -100px;
+}
 /* media quries  */
 
 @media only screen and (max-width: 1200.5px) {
