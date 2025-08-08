@@ -1971,6 +1971,17 @@ color: #331717;
 .form-control::placeholder{
   font-size: 14px;
 }
+.boost_rank_testi{
+  background-color: #240303;
+  padding: 24px;
+  border-radius: 14px;
+  margin-top: 4%;
+}
+.qout_des{
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
 /* media quries  */
 
 @media only screen and (max-width: 1200.5px) {
