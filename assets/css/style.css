@@ -1739,6 +1739,61 @@ input.file-input[type="file"] {
 
   color: #afafaf;
 }
+.select2-container--default .select2-selection--single {
+  background-color: rgba(251, 251, 251, 0.1);
+  border: 0.805145px solid #dedede;
+  border-radius: 7.15684px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 36px;
+  /* identical to box height, or 154% */
+  letter-spacing: 0.0805145px;
+  color: #afafaf;
+      height: 49.5px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 11px;
+ }
+ .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 11px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #afafaf;
+}
+.select2-dropdown {
+background: rgba(251, 251, 251, 0.9);
+border: 1px solid #DEDEDE;
+border-radius: 7px;
+
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: rgba(251, 251, 251, 0.9);
+    color: #343434;
+}
+.select2-results__option {
+    padding: 12px 6px;
+    border-bottom: 1px solid #ffffff80;
+}
+.select2-search.select2-search--dropdown{
+display: none !important;
+}
+.select2-selection__rendered .select_icon_img img{
+  width: 36px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.select_icon_img img{
+  width: 41px;
+  height: 39px;
+  object-fit: cover;
+  border-radius: 1px solid #fff;
+  border-radius: 4px;
+}
+
 .form_label_cs {
   font-style: normal;
   font-weight: 500;
